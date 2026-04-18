@@ -1,0 +1,146 @@
+:root {
+    --preto: #000000;
+    --branco: #ffffff;
+    --azul: #0A1F44;
+    --azul-claro: #1C3D7A;
+    --cinza: #f5f5f5;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--branco);
+    color: var(--preto);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    background: var(--preto);
+    color: var(--branco);
+    padding: 15px 0;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    color: var(--branco);
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--azul);
+}
+
+/* BANNER */
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(10,31,68,0.9)),
+                url('../img/banner.jpg') no-repeat center/cover;
+    color: var(--branco);
+    padding: 120px 0;
+    text-align: center;
+}
+
+.banner span {
+    color: var(--azul);
+}
+
+/* BOTÃO */
+.btn {
+    display: inline-block;
+    background: var(--azul);
+    color: var(--branco);
+    padding: 12px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--azul-claro);
+}
+
+/* SEÇÕES */
+.sobre {
+    background: var(--cinza);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.servicos {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.diferenciais {
+    background: var(--azul);
+    color: var(--branco);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contato {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* CARDS */
+.card {
+    width: 250px;
+    background: var(--branco);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    color: var(--azul);
+}
+
+/* LISTA */
+.diferenciais ul {
+    list-style: none;
+    padding: 0;
+}
+
+.diferenciais li {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    background: var(--preto);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+}
